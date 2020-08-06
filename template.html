@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Some metadata for my website. -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The line below is a description of your project. Write a short meaningful sentence here! -->
+  <meta name="description" content="Solving the drought through harvesting tears of college students.">
+  <!-- The line below sets the author of this page. Replace "your name" with your actual name. -->
+  <meta name="author" content="Wesley Chen">
+
+  <!-- Importing Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Importing custom fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+
+  <!-- Title of my webpage. Replace with some meaningful title. -->
+  <title>Putting your tears to use.</title>
+
+  <!-- Custom styling. Feel free to add your own style here! -->
+  <style>
+    .custom-font {
+      font-family: 'Varela Round', sans-serif;
+    }
+
+    body {
+      background-color: aliceblue;
+    }
+  </style>
+</head>
+
+<!-- by applying class "custom-font" on the body, the entire website will inherit my specified font. -->
+
+<body class="custom-font">
+  <!-- A break statement adds some distance from the top of the page to the top image. -->
+  <br />
+  <!-- A Bootstrap container allows me to use the grid system to customize my layout. Learn more about the grid at https://getbootstrap.com/docs/4.3/layout/grid/ -->
+  <div class="container text-center">
+    <!-- A Bootstrap figure lets me add an image along with a caption. https://getbootstrap.com/docs/4.0/content/figures/-->
+    <figure class="figure">
+      <img src="https://media.breitbart.com/media/2016/10/crying-baby-640x480.png" class="figure-img img-fluid rounded" alt="A crying baby." />
+      <figcaption class="figure-caption">Have you ever wanted to solve California's drought while feeling miserable at the same time?</figcaption>
+    </figure>
+    <!-- A horizontal divider element (<hr/>) allows me to draw a horizontal line across the element. -->
+    <hr />
+    <!-- Bootstrap's display heading allows me to make a heading that stands out. https://getbootstrap.com/docs/4.3/content/typography/#display-headings Note the <br> element used to add a newline. -->
+    <h1 class="display-4">Solving California's Drought:<br> Harvesting Tears</h1>
+    <!-- Bootstrap's lead class allows me to make a paragraph stand out. https://getbootstrap.com/docs/4.3/content/typography/#lead -->
+    <p class="lead">California has been in a drought for quite a while. In this project, we explore whether reusing tears created by students in California will make an impact.</p>
+  </div>
+  <!-- A break statement adds some distance from my intro text to my first section in a card. -->
+  <br />
+  <!-- the "text-center" class allows for horizontal centering. -->
+  <div class="container text-center">
+    <!-- Bootstrap's card elements are useful for dividing your page into sections. https://getbootstrap.com/docs/4.3/components/card/ -->
+    <div class="card">
+      <div class="card-header">
+        <h2>Component 1: Researching a Problem</h2>
+      </div>
+      <div class="card-body">
+        <!-- You can put containers in containers. -->
+        <div class="container">
+          <!-- The "justify" class alllows for center justifying. https://getbootstrap.com/docs/4.3/utilities/flex/#justify-content -->
+          <div class="row justify-content-center">
+            <h3>Element A: Indentification and Justification of the Problem</h3>
+          </div>
+          <div class="row justify-content-center">
+            <!-- The grid has 12 columns, "col-8" specifies that this element will take up 8 of the 12 columns. -->
+            <div class="col col-8 my-auto">
+              <p>California is in a drought, and now I have some problem on my hands. I have identified the problem, and now I am doing some cool justification of my problem.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae nulla neque. Aenean efficitur, purus a iaculis venenatis, magna tortor semper purus, eget ullamcorper nisi sapien molestie ipsum. Cras in lacinia dui, ut mattis
+                nunc. Donec et ex tincidunt, egestas nisi consequat, placerat massa. Ut in neque posuere, semper justo id, bibendum turpis. Pellentesque ac euismod sapien. Aliquam fermentum gravida rutrum. Mauris id accumsan felis, quis ornare
+                libero. Nullam pulvinar eros in convallis tristique. Curabitur sed dolor eget tortor fringilla porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ligula neque, varius eu vestibulum
+                eu, mattis eget massa.</p>
+              <p>Nunc efficitur urna eget orci iaculis rhoncus. Sed placerat enim vel justo iaculis lobortis. Aliquam vel feugiat arcu. Nam eros libero, porttitor in neque eu, porttitor finibus dolor. Quisque pellentesque metus eu venenatis tempus.
+                Nam pharetra neque eleifend quam varius cursus. Suspendisse eu placerat eros. Sed augue quam, consequat in vehicula ut, cursus non lacus. Fusce sodales semper justo pulvinar ornare. Nullam eget accumsan ex. Sed non viverra tellus.
+                Morbi vestibulum sollicitudin imperdiet. Proin in accumsan justo. Fusce et congue urna.</p>
+            </div>
+            <!-- Similar to the previous element, "col-4" specifies that the remaining 4 columns left in the grid will be spanned by this element. -->
+            <div class="col col-4 my-auto">
+              <figure class="figure">
+                <img src="https://apod.nasa.gov/apod/image/1907/SpotlessSunIss_Colacurcio_960.jpg" class="figure-img img-fluid rounded" alt="A crying baby." />
+                <figcaption class="figure-caption">The sun is just a little too strong...</figcaption>
+              </figure>
+            </div>
+          </div>
+          <hr />
+          <div class="container">
+            <div class="row justify-content-center">
+              <h3>Element B: Documentation and Analysis of Prior Solution Attempts</h3>
+              <figure class="figure">
+                <img src="https://komonews.com/resources/media/7c22edc6-7c4d-471a-a2e7-1d34a0e565d2-151208_rainy_seattle_lg.jpg?1449617058356" class="figure-img img-fluid rounded" alt="A crying baby." />
+                <figcaption class="figure-caption">Unfortunately we do not get as much rain as Seattle does...</figcaption>
+              </figure>
+              <!-- Notice how we link to another page using an anchor tag (<a>). -->
+              <p>Previously, people have tried to pray for rain. <a href="https://www.washingtonpost.com/news/capital-weather-gang/wp/2013/08/26/praying-for-rain-the-intersection-of-weather-and-religion/">Here's some documentation!</a> Anyways, it
+                probably doesn't work.</p>
+              <p>I myself have tried praying for rain, but I failed.</p>
+            </div>
+          </div>
+          <hr />
+          <div class="container">
+            <div class="row justify-content-center">
+              <h3>Element C: Presentation and Justification of Solution Requirements</h3>
+              <p>I am presenting and justifying my solution requirements.</p>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col col-8">
+                <!-- Bootstrap also has custom tables. Learn more at https://getbootstrap.com/docs/4.3/content/tables/ -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Requirement</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Water is produced.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>My data is secure.</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>There are no Minecraft memes.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</body>
+
+</html>
