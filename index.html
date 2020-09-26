@@ -5,6 +5,23 @@
     <title>Zoey Chen</title>
     <link rel="icon" type="image/png" href="favicon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+      function setColor()
+      {
+          var myArray = ['#CCE1F2', '#C6F8E5', '#FBF7D5', '#F9DED7', '#F5CDDE', '#E2BEF1'];
+          var rand = myArray[Math.floor(Math.random() * myArray.length)];
+          document.getElementById("myDiv").style.backgroundColor = rand;
+      }
+      var colorChange;
+      function myFunction() {
+        colorChange = setInterval(setColor, 3000);
+        // setColor();
+        // alert("hi");
+      }
+      function stopColor() {
+        clearInterval(colorChange);
+      }
+    </script>
   </head>
   <style>
     img {
@@ -30,7 +47,7 @@
       width:300px;
     }
   </style>
-  <body>
+  <body id = "myDiv" onload="myFunction()">
     <div class="container">
       <div class="row justify-content-md-center">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -64,6 +81,9 @@
       </div>
       <div class="row justify-content-md-center">
         <p>Hey! I'm just a cool girl.</p>
+      </div>
+      <div class="row justify-content-md-center">
+        <button type="button" class="btn btn-outline-secondary" onclick="stopColor()">Stop Changing Colors</button>
       </div>
     </div>
     <div class="container">
