@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-10 border-t border-warm-200 dark:border-warm-600">
       <h2 className="font-[family-name:var(--font-heading)] text-xl font-semibold text-warm-700 dark:text-warm-200 mb-4">
-        Get in touch
+        get in touch
       </h2>
       <p className="text-[1.05rem] text-warm-500 dark:text-warm-400 mb-6">
         interested in working together or just want to say hi? (yay!) feel free to reach out to me through email!

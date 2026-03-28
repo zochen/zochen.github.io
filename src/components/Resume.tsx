@@ -20,7 +20,7 @@ export default function Resume() {
     <section id="resume" className="py-10 border-t border-warm-200 dark:border-warm-600">
       <div className="flex items-baseline justify-between mb-8">
         <h2 className="font-[family-name:var(--font-heading)] text-xl font-semibold text-warm-700 dark:text-warm-200">
-          Resume
+          resume
         </h2>
         <a
           href="/resume.pdf"
@@ -40,10 +40,10 @@ export default function Resume() {
               {item.date}
             </span>
             <div>
-              <h3 className="font-[family-name:var(--font-heading)] font-medium text-warm-700 dark:text-warm-200" style={{ textTransform: "none" }}>
+              <h3 className="font-[family-name:var(--font-heading)] font-medium text-warm-700 dark:text-warm-200">
                 {item.title}
               </h3>
-              <p className="text-sm text-accent-500 dark:text-accent-400 mt-0.5" style={{ textTransform: "none" }}>
+              <p className="text-sm text-accent-500 dark:text-accent-400 mt-0.5">
                 {item.role}
               </p>
               <p className="text-sm text-warm-500 dark:text-warm-400 mt-2 leading-relaxed">
@@ -65,10 +65,10 @@ export default function Resume() {
           { category: "Spoken", items: "English and Chinese (native/bilingual), French (limited working proficiency)" },
         ].map((group) => (
           <div key={group.category} className="flex gap-4">
-            <span className="text-sm font-medium text-warm-400 dark:text-warm-400 w-32 shrink-0 pt-0.5" style={{ textTransform: "none" }}>
+            <span className="text-sm font-medium text-warm-400 dark:text-warm-400 w-32 shrink-0 pt-0.5">
               {group.category}
             </span>
-            <span className="text-[0.938rem] text-warm-500 dark:text-warm-400" style={{ textTransform: "none" }}>
+            <span className="text-[0.938rem] text-warm-500 dark:text-warm-400">
               {group.items}
             </span>
           </div>

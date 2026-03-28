@@ -23,7 +23,7 @@ export default function Projects() {
     <section id="projects" className="py-10 border-t border-warm-200 dark:border-warm-600">
       <div className="flex items-baseline justify-between mb-4">
         <h2 className="font-[family-name:var(--font-heading)] text-xl font-semibold text-warm-700 dark:text-warm-200">
-          Projects
+          projects
         </h2>
         <div className="flex gap-4">
           {filters.map((filter) => (
@@ -63,7 +63,7 @@ export default function Projects() {
 
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2">
-                <h3 className="font-[family-name:var(--font-heading)] font-medium text-lg text-warm-700 dark:text-warm-200" style={{ textTransform: "none" }}>
+                <h3 className="font-[family-name:var(--font-heading)] font-medium text-lg text-warm-700 dark:text-warm-200">
                   {project.title}
                 </h3>
                 <ArrowUpRight

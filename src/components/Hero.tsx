@@ -5,7 +5,7 @@ export default function Hero() {
         hi, i&apos;m zoey chen!
       </h1>
       <div className="flex items-center gap-4 mb-6">
-        <h2 className="text-lg text-warm-400 dark:text-warm-400" style={{ textTransform: "none" }}>
+        <h2 className="text-lg text-warm-400 dark:text-warm-400">
           CSE @ UCI
         </h2>
         <div className="flex items-center gap-3 text-warm-400">
@@ -18,7 +18,7 @@ export default function Hero() {
         </div>
       </div>
       <p className="text-[1.15rem] leading-[1.7] text-warm-500 dark:text-warm-400">
-        I&apos;m a developer, artist, and student. i love to find new ways to
+        I&apos;m a developer, artist, and student. I love to find new ways to
         express myself — whether that&apos;s designing games, building websites,
         or through physical mediums.
       </p>
