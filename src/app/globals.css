@@ -30,7 +30,6 @@
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
-  text-transform: lowercase;
 }
 
 /* Custom cursor (light mode) */
