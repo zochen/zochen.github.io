@@ -60,6 +60,16 @@ export const projects: Project[] = [
     link: "https://zochen.github.io/",
   },
   {
+    id: "weather-forecast",
+    title: "Weather Forecast",
+    description:
+      "A weather forecast app that displays current conditions and upcoming forecasts for any location. Built using the National Weather Service API and OpenStreetMap/Nominatim for geocoding.",
+    thumbnail: "/images/projects/weatherthumb.png",
+    tags: ["HTML", "JavaScript", "CSS"],
+    category: "web",
+    link: "https://zochen.github.io/weather-forecast/",
+  },
+  {
     id: "petrdex",
     title: "Petrdex",
     description:
