@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Tell Tailwind v4 to use the "class" strategy for dark mode (needed for next-themes) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================================================
+   CUSTOM THEME — Warm neutral palette inspired by paulstamatiou.com
+   ============================================================================ */
+
+@theme {
+  /* Warm neutral color scale */
+  --color-warm-100: #faf9f7;
+  --color-warm-200: #f0eeeb;
+  --color-warm-300: #d9d6d0;
+  --color-warm-400: #a8a29e;
+  --color-warm-500: #57534e;
+  --color-warm-600: #3a3733;
+  --color-warm-700: #1c1917;
+
+  /* Subtle accent (muted green, like stammy's) */
+  --color-accent-400: #6b9e7a;
+  --color-accent-500: #4a7c59;
+  --color-accent-600: #3d6b4a;
+
+  /* Fonts — single font for everything, like sharyap.com */
+  --font-heading: "Zen Kaku Gothic New", sans-serif;
+  --font-body: "Zen Kaku Gothic New", sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  text-transform: lowercase;
+}
+
+/* Custom cursor (light mode) */
+*,
+*::before,
+*::after {
+  cursor: url("/cursor.png") 14 0, auto;
+}
+
+a,
+button,
+[role="button"],
+input[type="submit"],
+select {
+  cursor: url("/cursor-pointer.png") 17 0, pointer;
+}
+
+/* Custom cursor (dark mode — inverted) */
+.dark *,
+.dark *::before,
+.dark *::after {
+  cursor: url("/cursor-dark.png") 14 0, auto;
+}
+
+.dark a,
+.dark button,
+.dark [role="button"],
+.dark input[type="submit"],
+.dark select {
+  cursor: url("/cursor-pointer-dark.png") 17 0, pointer;
+}

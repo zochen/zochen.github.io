@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where node:*)",
+      "Bash(where npm:*)",
+      "Bash(npm --version)",
+      "Bash(npx:*)",
+      "Bash(mv favicon.png old-site/)",
+      "Bash(mv README.md old-site/)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(grep -i \"github\\\\|linkedin\" node_modules/lucide-react/dist/esm/icons/*.js)",
+      "Bash(node -e \"const m = require\\(''''lucide-react''''\\); const keys = Object.keys\\(m\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''''git''''\\) || k.toLowerCase\\(\\).includes\\(''''linked''''\\)\\); console.log\\(keys\\);\")",
+      "Bash(taskkill //f //im python.exe)",
+      "WebFetch(domain:zochen.itch.io)",
+      "Bash(python -m http.server 3000)",
+      "Bash(sleep:*)",
+      "Bash(taskkill:*)",
+      "WebFetch(domain:www.sharyap.com)",
+      "WebFetch(domain:fire-fusion101.itch.io)",
+      "WebFetch(domain:p1cotee.itch.io)",
+      "Bash(gh repo:*)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
