@@ -36,7 +36,7 @@ html {
 *,
 *::before,
 *::after {
-  cursor: url("/cursor.png") 14 0, auto;
+  cursor: url("/2.png") 1 0, auto;
 }
 
 a,
@@ -44,14 +44,14 @@ button,
 [role="button"],
 input[type="submit"],
 select {
-  cursor: url("/cursor-pointer.png") 17 0, pointer;
+  cursor: url("/1.png") 4 0, pointer;
 }
 
 /* Custom cursor (dark mode — inverted) */
 .dark *,
 .dark *::before,
 .dark *::after {
-  cursor: url("/cursor-dark.png") 14 0, auto;
+  cursor: url("/2.png") 1 0, auto;
 }
 
 .dark a,
@@ -59,5 +59,29 @@ select {
 .dark [role="button"],
 .dark input[type="submit"],
 .dark select {
-  cursor: url("/cursor-pointer-dark.png") 17 0, pointer;
+  cursor: url("/1.png") 4 0, pointer;
+}
+
+@keyframes mascot-msg {
+  0% { opacity: 0; }
+  10% { opacity: 1; }
+  65% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes hop {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-8px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(-5px); }
+  80% { transform: translateY(0); }
+  100% { transform: translateY(0); }
+}
+
+.animate-hop {
+  animation: hop 0.5s ease-in-out;
+}
+
+.animate-mascot-msg {
+  animation: mascot-msg 4s ease-in-out forwards;
 }
