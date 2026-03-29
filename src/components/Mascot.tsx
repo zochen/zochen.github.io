@@ -114,7 +114,7 @@ export default function Mascot() {
       )}
       <img
         src={message ? "/mascot-open-mouth.png" : blinking ? "/mascot-eyes-closed.png" : "/mascot-eyes-open.png"}
-        alt="Mascot"
+        alt=""
         onClick={handleClick}
         onAnimationEnd={(e) => { if (e.animationName === "hop") setHopping(false); }}
         className={`w-20 h-20 md:w-24 md:h-24 object-contain drop-shadow-md dark:invert cursor-pointer transition-[filter] duration-200 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.4)] ${hopping ? "animate-hop" : ""}`}
