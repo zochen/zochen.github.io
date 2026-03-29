@@ -1,12 +1,12 @@
 export default function Hero() {
   return (
     <section className="pt-16 pb-12">
-      <h1 className="font-[family-name:var(--font-heading)] text-4xl font-semibold text-warm-700 dark:text-warm-200 mb-6">
+      <h1 className="font-[family-name:var(--font-heading)] text-5xl font-semibold text-warm-700 dark:text-warm-200 mb-6">
         hi, i&apos;m zoey chen!
       </h1>
       <div className="flex items-center gap-4 mb-6">
         <h2 className="text-lg text-warm-400 dark:text-warm-400">
-          CSE @ UCI
+          CSE @ UC Irvine &apos;29
         </h2>
         <div className="flex items-center gap-3 text-warm-400">
           <a href="https://github.com/zochen" target="_blank" rel="noopener noreferrer" className="hover:text-warm-700 dark:hover:text-warm-200 transition-colors">
