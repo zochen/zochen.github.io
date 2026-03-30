@@ -77,6 +77,13 @@ const messages = [
   "d(=^･ω･^=)b",
   "(^∇^)",
   "(๑･`◡´･๑)",
+  "don't worry, zoey is here!",
+  "yum yum yum",
+  "fret not, i'm here!",
+  "wowzers",
+  "heartache heartache...",
+  "HI",
+  "erm what the flip"
 ];
 
 export default function Mascot() {
