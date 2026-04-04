@@ -10,7 +10,7 @@ export default function GalleryPage() {
             gallery
           </h1>
           <p className="text-[1.05rem] text-warm-500 dark:text-warm-400 mb-10">
-            a collection of images i took from the 3d art classes i took in high school. i wish i took more!
+            a collection of images i took from my high school 3d art classes. i wish i took more!
           </p>
         </section>
       </FadeIn>

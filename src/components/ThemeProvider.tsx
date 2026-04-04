@@ -12,7 +12,7 @@ export default function ThemeProvider({
   return (
     // attribute="class" adds/removes the "dark" class on <html> for Tailwind dark mode
     // defaultTheme="system" respects the user's OS preference (light/dark)
-    <NextThemesProvider attribute="class" defaultTheme="system" enableSystem>
+    <NextThemesProvider attribute="class" defaultTheme="light">
       {children}
     </NextThemesProvider>
   );
