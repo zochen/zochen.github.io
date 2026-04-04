@@ -1,21 +1,13 @@
 import { Project } from "@/lib/types";
 
-// =============================================================================
-// YOUR PROJECTS — Edit this array to add, remove, or update your portfolio items.
-// Each project needs: id, title, description, thumbnail, tags, and category.
-// The "link" and "date" fields are optional.
-//
-// To add a new project, just copy one of the objects below and change the values!
-// =============================================================================
-
 export const projects: Project[] = [
   {
     id: "gilgamesh",
     title: "Gilgamesh Destroys The World",
     description:
-      "You can't destroy the world on an empty stomach... A puzzle game made at UCI, Winter quarter 2026.",
+      "You can't destroy the world on an empty stomach... A puzzle game made at UCI, winter quarter 2026.",
     thumbnail: "/images/projects/gilgamesh.png",
-    tags: ["Puzzle", "Game Jam", "Browser", "VGDC"],
+    tags: ["Unity", "C#", "Project Teams", "VGDC"],
     category: "games",
     link: "https://itscalamari.itch.io/gilgamesh",
   },
@@ -25,7 +17,7 @@ export const projects: Project[] = [
     description:
       "Woo your crush, but don't get noticed! A simulation game made collaboratively for winter game jam 2026.",
     thumbnail: "/images/projects/rose-tinted-vision.png",
-    tags: ["Simulation", "Game Jam", "VGDC"],
+    tags: ["Unity", "C#", "ZotJam", "VGDC"],
     category: "games",
     link: "https://cherriesandroses.itch.io/rose-tinted-vision",
   },
@@ -35,7 +27,7 @@ export const projects: Project[] = [
     description:
       "Shrink inside an anthill and fight ants now on equal footing. A 2D metroidvania platformer made at UCI, Fall quarter 2025.",
     thumbnail: "/images/projects/ant-eater.png",
-    tags: ["Platformer", "2D", "Metroidvania", "VGDC"],
+    tags: ["Unity", "C#", "Project Teams", "VGDC"],
     category: "games",
     link: "https://fire-fusion101.itch.io/anteater",
   },
@@ -45,7 +37,7 @@ export const projects: Project[] = [
     description:
       "discover the mystery of your lost memories. A visual novel puzzle game made at UCI, Fall Zotjam 2025.",
     thumbnail: "/images/projects/unforgettable-spirit.png",
-    tags: ["Unity", "Game Jam", "Browser", "VGDC"],
+    tags: ["Unity", "C#", "ZotJam", "VGDC"],
     category: "games",
     link: "https://p1cotee.itch.io/unforgettable-spirit2",
   },
@@ -53,7 +45,7 @@ export const projects: Project[] = [
     id: "portfolio",
     title: "Portfolio Website",
     description:
-      "My personal portfolio site, built from scratch with Next.js, Tailwind CSS, and Framer Motion.",
+      "A responsive personal portfolio built with Next.js, TypeScript, Tailwind CSS, and Framer Motion. Features static site generation, dark mode support, and animated UI components. Built with AI-assisted development using Claude Code.",
     thumbnail: "/images/projects/portfolio.png",
     tags: ["Next.js", "Tailwind CSS", "TypeScript"],
     category: "web",

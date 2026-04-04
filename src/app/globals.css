@@ -32,36 +32,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom cursor (light mode) */
-*,
-*::before,
-*::after {
-  cursor: url("/2.png") 1 0, auto;
-}
-
-a,
-button,
-[role="button"],
-input[type="submit"],
-select {
-  cursor: url("/1.png") 4 0, pointer;
-}
-
-/* Custom cursor (dark mode — inverted) */
-.dark *,
-.dark *::before,
-.dark *::after {
-  cursor: url("/2.png") 1 0, auto;
-}
-
-.dark a,
-.dark button,
-.dark [role="button"],
-.dark input[type="submit"],
-.dark select {
-  cursor: url("/1.png") 4 0, pointer;
-}
-
 @keyframes mascot-msg {
   0% { opacity: 0; }
   10% { opacity: 1; }
@@ -80,6 +50,15 @@ select {
 
 .animate-hop {
   animation: hop 0.5s ease-in-out;
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink-cursor 0.6s step-end infinite;
 }
 
 .animate-mascot-msg {

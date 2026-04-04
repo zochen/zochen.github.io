@@ -1,9 +1,3 @@
-// =============================================================================
-// YOUR GALLERY — Add images here to display in the gallery grid.
-// Just add a new object with a src, alt, and optional caption.
-// Drop your images in public/images/gallery/
-// =============================================================================
-
 export interface GalleryImage {
   src: string;
   alt: string;

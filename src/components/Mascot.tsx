@@ -1,6 +1,29 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
+
+function Typewriter({ text, onDone }: { text: string; onDone?: () => void }) {
+  const [displayed, setDisplayed] = useState("");
+  const idx = useRef(0);
+
+  useEffect(() => {
+    idx.current = 0;
+    setDisplayed("");
+    const interval = setInterval(() => {
+      idx.current++;
+      if (idx.current >= text.length) {
+        setDisplayed(text);
+        clearInterval(interval);
+        onDone?.();
+      } else {
+        setDisplayed(text.slice(0, idx.current));
+      }
+    }, 20);
+    return () => clearInterval(interval);
+  }, [text, onDone]);
+
+  return <>{displayed}</>;
+}
 
 const messages = [
   "hi! :D",
@@ -151,7 +174,7 @@ export default function Mascot() {
           className="absolute top-1/2 -translate-y-1/2 right-full mr-3 text-sm text-warm-500 dark:text-warm-300 whitespace-nowrap animate-mascot-msg"
           onAnimationEnd={() => setMessage(null)}
         >
-          {message}
+          <Typewriter text={message} />
         </div>
       )}
       <img
