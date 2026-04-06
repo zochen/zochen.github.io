@@ -13,7 +13,6 @@ const navLinks = [
   { label: "projects", href: "/#projects" },
   { label: "resume", href: "/#resume" },
   { label: "contact", href: "/#contact" },
-  { label: "guestbook", href: "/guestbook" },
 ];
 
 function NavLinksWithSlider({ className, vertical = false }: { className?: string; vertical?: boolean }) {
