@@ -1,9 +1,11 @@
 import FadeIn from "@/components/FadeIn";
 import SpotifyEmbed from "@/components/SpotifyEmbed";
 import { fetchLetterboxdFilms } from "@/lib/letterboxd";
+import { fetchTopSteamGames } from "@/lib/steam";
 
 export default async function InterestsPage() {
   const { films, fetchedAt } = await fetchLetterboxdFilms();
+  const games = await fetchTopSteamGames();
 
   return (
     <main>
@@ -50,7 +52,7 @@ export default async function InterestsPage() {
                 href={film.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group"
+                className="group p-3 rounded-xl hover:bg-warm-200 dark:hover:bg-warm-600/60 transition-colors"
               >
                 {film.poster && (
                   <img
@@ -73,6 +75,45 @@ export default async function InterestsPage() {
                     {film.review}
                   </p>
                 )}
+              </a>
+            ))}
+          </div>
+        </section>
+      </FadeIn>
+      <FadeIn delay={0.3}>
+        <section className="py-10 border-t border-warm-200 dark:border-warm-600">
+          <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold text-warm-700 dark:text-warm-200 mb-4">
+            <a href="https://steamcommunity.com/profiles/76561198995905827/" target="_blank" rel="noopener noreferrer" className="hover:text-accent-500 transition-colors">
+              games
+            </a>
+          </h3>
+
+          <p className="text-[1.05rem] text-warm-500 dark:text-warm-400 mb-6">
+            my top 5 most played games on steam. not necessarily my favorite, though!
+          </p>
+
+          <div className="space-y-1">
+            {games.map((game) => (
+              <a
+                key={game.appid}
+                href={`https://store.steampowered.com/app/${game.appid}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-3 rounded-xl hover:bg-warm-200 dark:hover:bg-warm-600/60 transition-colors group"
+              >
+                <img
+                  src={game.headerUrl}
+                  alt={game.name}
+                  className="w-40 h-[75px] object-cover rounded-lg"
+                />
+                <div className="flex-1 min-w-0">
+                  <p className="text-[0.95rem] font-medium text-warm-600 dark:text-warm-300 truncate">
+                    {game.name}
+                  </p>
+                  <p className="text-sm text-warm-400 dark:text-warm-500">
+                    {game.playtimeHours} hrs
+                  </p>
+                </div>
               </a>
             ))}
           </div>
