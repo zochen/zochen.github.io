@@ -114,6 +114,9 @@ export default function Mascot() {
   const [message, setMessage] = useState<string | null>(null);
   const [msgKey, setMsgKey] = useState(0);
   const [hopping, setHopping] = useState(false);
+  const [clickCount, setClickCount] = useState(0);
+  const [showGuestbook, setShowGuestbook] = useState(false);
+  const clickTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const scheduleBlink = () => {
@@ -164,10 +167,32 @@ export default function Mascot() {
         setHopping(true);
       });
     });
+
+    // Track successive clicks
+    if (clickTimer.current) clearTimeout(clickTimer.current);
+    setClickCount((prev) => {
+      const next = prev + 1;
+      if (next >= 22) {
+        setShowGuestbook(true);
+        return 0;
+      }
+      return next;
+    });
+    // Reset count if no click within 2 seconds
+    clickTimer.current = setTimeout(() => setClickCount(0), 2000);
   }, []);
 
   return (
     <div className="fixed -bottom-2 right-4 z-40 select-none">
+      {showGuestbook && (
+        <a
+          href="/guestbook"
+          className="absolute -top-10 left-1/2 -translate-x-1/2 transition-all animate-bounce"
+          title="guestbook"
+        >
+          <img src="/book_bgremoved.png" alt="guestbook" className="w-10 h-10 object-contain dark:invert" />
+        </a>
+      )}
       {message && (
         <div
           key={msgKey}
