@@ -11,7 +11,7 @@ const timelineItems = [
     title: "Valley Christian High School",
     role: "",
     date: "2021 — 2025",
-    description: "",
+    description: "Clubs: Astronomy Club, Valley Breathe Club, Taiwanese Club, Asian Arts Club, Physics Club, French Club",
   },
 ];
 

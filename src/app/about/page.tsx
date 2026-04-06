@@ -28,10 +28,10 @@ export default function AboutPage() {
           <div className="text-[1.15rem] leading-[1.7] text-warm-500 dark:text-warm-400 space-y-6">
             <p>Thanks for visiting my website!</p>
             <p>
-              My name is Zoey Chen. As of now, I&apos;m <LiveAge />{" "}years old. I&apos;m currently a freshman at University of California, Irvine studying Computer Science and Engineering. My hometown is San Jose, CA.
+              My name is Zoey Chen. As of now, I&apos;m <LiveAge />{" "}years old. I&apos;m a freshman at University of California, Irvine studying Computer Science and Engineering. I was born and raised in San Jose, California!
             </p>
             <p>
-              In my free time, I enjoy coding, art, music, and hanging out with friends. In these next few years, I hope to experience as many new things as possible.
+              In my free time, I enjoy coding, art, music, and hanging out with friends (I&apos;ve picked up cafe-hopping recently). In these next few years, I hope to try as many new things as possible whether it be academics or interests.
             </p>
             <p>
               Feel free to reach out! I would love to talk to you. :D

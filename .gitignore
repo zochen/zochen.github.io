@@ -14,6 +14,7 @@
 # next.js
 /.next/
 /out/
+/dist/dev/
 
 # production
 /build
@@ -34,3 +35,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.claude/settings.local.json
