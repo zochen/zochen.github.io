@@ -16,11 +16,27 @@ const InstagramIcon = () => (
   </svg>
 );
 
+const LetterboxdIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 500 500" fill="currentColor">
+    <circle cx="150" cy="250" r="120" opacity="0.6"/>
+    <circle cx="250" cy="250" r="120" opacity="0.6"/>
+    <circle cx="350" cy="250" r="120" opacity="0.6"/>
+  </svg>
+);
+
+const SteamIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M11.979 0C5.678 0 .511 4.86.022 10.919l6.432 2.658a3.387 3.387 0 0 1 1.912-.59c.063 0 .125.002.188.006l2.861-4.142V8.77a4.508 4.508 0 0 1 4.504-4.504 4.508 4.508 0 0 1 4.505 4.504 4.508 4.508 0 0 1-4.505 4.505h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396a3.404 3.404 0 0 1-3.362-2.898L.309 13.693C1.576 19.55 6.27 24 11.979 24c6.627 0 12.001-5.373 12.001-12S18.606 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25a2.544 2.544 0 0 0 3.337-1.332 2.53 2.53 0 0 0 0-1.946 2.544 2.544 0 0 0-1.378-1.381 2.536 2.536 0 0 0-1.865-.037l1.523.63a1.868 1.868 0 0 1-.979 3.592 1.868 1.868 0 0 1-.479-.166zm8.878-8.937a3.01 3.01 0 0 0-3.006-3.006 3.01 3.01 0 0 0-3.006 3.006 3.01 3.01 0 0 0 3.006 3.006 3.01 3.01 0 0 0 3.006-3.006zm-5.262-.005a2.26 2.26 0 0 1 2.256-2.256 2.26 2.26 0 0 1 2.256 2.256 2.26 2.26 0 0 1-2.256 2.256 2.26 2.26 0 0 1-2.256-2.256z"/>
+  </svg>
+);
+
 export default function About() {
   const socials = [
     { name: "GitHub", href: "https://github.com/zochen", icon: GitHubIcon },
     { name: "LinkedIn", href: "https://www.linkedin.com/in/zo-chen/", icon: LinkedInIcon },
     { name: "Instagram", href: "https://instagram.com/chyeoz", icon: InstagramIcon },
+    { name: "Letterboxd", href: "https://letterboxd.com/diminish/", icon: LetterboxdIcon },
+    { name: "Steam", href: "https://steamcommunity.com/profiles/76561198995905827/", icon: SteamIcon },
   ];
 
   const skills = [
@@ -66,6 +82,7 @@ export default function About() {
           </div>
         ))}
       </div>
+
     </section>
   );
 }

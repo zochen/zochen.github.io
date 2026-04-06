@@ -20,7 +20,16 @@
       "WebFetch(domain:fire-fusion101.itch.io)",
       "WebFetch(domain:p1cotee.itch.io)",
       "Bash(gh repo:*)",
-      "WebFetch(domain:github.com)"
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:zochen.github.io)",
+      "Bash(git:*)",
+      "WebFetch(domain:paulstamatiou.com)",
+      "Bash(bash -c 'pid=$\\(lsof -ti:3000 2>/dev/null\\); if [ -n \"$pid\" ]; then kill $pid 2>/dev/null; fi; echo \"done\"')",
+      "Bash(python -c \"import playwright\")",
+      "Bash(node capture.mjs)",
+      "Bash(python -c \":*)",
+      "Bash(cd:*)",
+      "Bash(bash -c 'for pid in $\\(netstat -ano 2>/dev/null | grep \":3000\" | grep \"LISTENING\" | awk \"{print \\\\$5}\" | sort -u\\); do taskkill //F //PID $pid 2>/dev/null; done; echo \"done\"')"
     ]
   }
 }
