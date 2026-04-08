@@ -3,15 +3,15 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import { galleryImages } from "@/data/gallery";
+import { GalleryImage } from "@/data/gallery";
 
-export default function Gallery() {
+export default function AlbumGallery({ images }: { images: GalleryImage[] }) {
   const [selected, setSelected] = useState<number | null>(null);
 
   return (
     <>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-        {galleryImages.map((image, i) => (
+        {images.map((image, i) => (
           <motion.button
             key={i}
             onClick={() => setSelected(i)}
@@ -35,7 +35,6 @@ export default function Gallery() {
         ))}
       </div>
 
-      {/* Lightbox overlay */}
       <AnimatePresence>
         {selected !== null && (
           <motion.div
@@ -63,13 +62,13 @@ export default function Gallery() {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={galleryImages[selected].src}
-                alt={galleryImages[selected].alt}
+                src={images[selected].src}
+                alt={images[selected].alt}
                 className="max-w-full max-h-[80vh] object-contain rounded-lg"
               />
-              {galleryImages[selected].caption && (
+              {images[selected].caption && (
                 <p className="text-white/80 text-sm text-center mt-3">
-                  {galleryImages[selected].caption}
+                  {images[selected].caption}
                 </p>
               )}
             </motion.div>

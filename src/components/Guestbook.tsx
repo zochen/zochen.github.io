@@ -110,10 +110,12 @@ export default function Guestbook() {
               </span>
               {entry.createdAt && (
                 <span className="text-xs text-warm-400/60 dark:text-warm-500/60">
-                  {entry.createdAt.toLocaleDateString("en-US", {
+                  {entry.createdAt.toLocaleString("en-US", {
                     month: "short",
                     day: "numeric",
                     year: "numeric",
+                    hour: "numeric",
+                    minute: "2-digit",
                   })}
                 </span>
               )}

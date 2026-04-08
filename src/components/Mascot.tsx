@@ -187,10 +187,14 @@ export default function Mascot() {
       {showGuestbook && (
         <a
           href="/guestbook"
-          className="absolute -top-10 left-1/2 -translate-x-1/2 transition-all animate-bounce"
+          className="absolute -top-10 left-1/2 -translate-x-1/2 animate-bounce"
           title="guestbook"
         >
-          <img src="/book_bgremoved.png" alt="guestbook" className="w-10 h-10 object-contain dark:invert" />
+          <img
+            src="/book_bgremoved.png"
+            alt=""
+            className="w-10 h-10 object-contain dark:invert drop-shadow-md transition-[filter] duration-200 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.3)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]"
+          />
         </a>
       )}
       {message && (
