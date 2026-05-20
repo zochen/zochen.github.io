@@ -4,8 +4,8 @@ const timelineItems = [
   {
     title: "University of Irvine, California",
     role: "B.S. in Computer Science and Engineering",
-    date: "2025 — Present",
-    description: "",
+    date: "2025 — 06/2029",
+    description: "Clubs: Women in Information and Computer Science, Video Game Development Club, AI Safety Collective at Irvine, Finding Fika, Design @ UCI",
   },
   {
     title: "Valley Christian High School",

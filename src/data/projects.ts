@@ -2,6 +2,16 @@ import { Project } from "@/lib/types";
 
 export const projects: Project[] = [
   {
+    id: "capyconnect",
+    title: "CapyConnect",
+    description:
+      "A web extension that gives candidates and interviewers the tools they need to reduce bias and make interviews a more inclusive opportunity for everyone.",
+    thumbnail: "/images/projects/capyconnect.png",
+    tags: ["React", "Node.js", "MongoDB"],
+    category: "web",
+    link: "https://devpost.com/software/capyconnect-jt7wue",
+  },
+  {
     id: "gilgamesh",
     title: "Gilgamesh Destroys The World",
     description:
