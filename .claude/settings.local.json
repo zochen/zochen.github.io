@@ -31,7 +31,14 @@
       "Bash(cd:*)",
       "Bash(bash -c 'for pid in $\\(netstat -ano 2>/dev/null | grep \":3000\" | grep \"LISTENING\" | awk \"{print \\\\$5}\" | sort -u\\); do taskkill //F //PID $pid 2>/dev/null; done; echo \"done\"')",
       "Bash(curl -s \"https://steamcommunity.com/profiles/76561198995905827/games/?tab=all&xml=1\")",
-      "Bash(tasklist)"
+      "Bash(tasklist)",
+      "Bash(gh auth *)",
+      "Bash(gh api *)",
+      "Bash(npm audit *)",
+      "Bash(npm ls *)",
+      "Bash(ls next.config.*)",
+      "Bash(ls \"C:/Users/zoeyc/package-lock.json\" \"C:/Users/zoeyc/Documents/package-lock.json\" \"C:/Users/package-lock.json\")",
+      "Bash(break)"
     ]
   }
 }
