@@ -52,6 +52,16 @@ export const projects: Project[] = [
     link: "https://p1cotee.itch.io/unforgettable-spirit2",
   },
   {
+    id: "formilife",
+    title: "Formilife",
+    description:
+      "A top-down 2.5D ant farm simulator where you grow your colony and complete quests for your queen to keep it alive. Made at UCI, winter quarter 2026.",
+    thumbnail: "/images/projects/formilife.png",
+    tags: ["Unity", "C#"],
+    category: "games",
+    link: "https://kirill-volynsky.itch.io/formilife",
+  },
+  {
     id: "portfolio",
     title: "Portfolio Website",
     description:

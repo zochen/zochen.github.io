@@ -26,7 +26,7 @@ export default function Resume() {
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 text-base px-3 py-1.5 rounded-md text-warm-400 hover:text-warm-600 dark:hover:text-warm-300 transition-colors"
+          className="flex items-center gap-2 text-sm px-3 py-1.5 rounded-none border border-warm-300 dark:border-warm-600 text-warm-400 hover:text-warm-600 dark:hover:text-warm-300 transition-colors"
         >
           <Download size={16} />
           Download PDF
